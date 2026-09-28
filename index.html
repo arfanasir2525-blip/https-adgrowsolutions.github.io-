@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdGrow Solutions | Digital Marketing Agency</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#07111f;
+  color:white;
+  line-height:1.6;
+}
+
+.container{
+  width:92%;
+  max-width:1100px;
+  margin:auto;
+}
+
+nav{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#081525;
+  border-bottom:1px solid #20354d;
+}
+
+.nav{
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.logo span{
+  color:#39d5ff;
+}
+
+.nav a{
+  color:white;
+  text-decoration:none;
+}
+
+.btn{
+  display:inline-block;
+  background:#39d5ff;
+  color:#04101c;
+  padding:13px 20px;
+  border-radius:10px;
+  font-weight:bold;
+  text-decoration:none;
+  cursor:pointer;
+  border:0;
+}
+
+.hero{
+  padding:100px 0;
+  background:radial-gradient(circle at 80% 20%,#12415c,transparent 40%);
+}
+
+.hero h1{
+  font-size:clamp(42px,7vw,72px);
+  line-height:1.05;
+  max-width:850px;
+}
+
+.hero h1 span{
+  color:#39d5ff;
+}
+
+.hero p{
+  color:#aebed0;
+  max-width:680px;
+  font-size:18px;
+  margin:25px 0;
+}
+
+.section{
+  padding:80px 0;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.title h2{
+  font-size:38px;
+}
+
+.title p{
+  color:#9fb1c5;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.card{
+  background:#0d1b2d;
+  border:1px solid #20354d;
+  border-radius:18px;
+  padding:28px;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#39d5ff;
+}
+
+.icon{
+  font-size:34px;
+  margin-bottom:12px;
+}
+
+.card h3{
+  margin-bottom:8px;
+}
+
+.card p{
+  color:#9fb1c5;
+}
+
+.learn{
+  display:block;
+  margin-top:15px;
+  color:#39d5ff;
+  font-weight:bold;
+}
+
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.about p{
+  color:#aebed0;
+}
+
+.box{
+  background:#0d1b2d;
+  border:1px solid #20354d;
+  border-radius:20px;
+  padding:30px;
+}
+
+.contact{
+  text-align:center;
+  background:#0d1b2d;
+  border:1px solid #20354d;
+  border-radius:20px;
+  padding:40px;
+}
+
+.contact p{
+  color:#aebed0;
+  margin:12px 0 25px;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  border-top:1px solid #20354d;
+  color:#8294a8;
+}
+
+/* POPUP */
+
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.75);
+  z-index:100;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.modal.show{
+  display:flex;
+}
+
+.modal-box{
+  position:relative;
+  width:100%;
+  max-width:600px;
+  background:#0d1b2d;
+  border:1px solid #39d5ff;
+  border-radius:20px;
+  padding:35px;
+}
+
+.modal-box h2{
+  font-size:32px;
+  margin-bottom:15px;
+}
+
+.modal-box p{
+  color:#b5c4d5;
+  margin-bottom:25px;
+}
+
+.close{
+  position:absolute;
+  right:15px;
+  top:8px;
+  background:none;
+  border:0;
+  color:white;
+  font-size:32px;
+  cursor:pointer;
+}
+
+@media(max-width:750px){
+  .grid,
+  .about{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding:70px 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<div class="container nav">
+
+<a href="#" class="logo">
+AdGrow <span>Solutions</span>
+</a>
+
+<a class="btn"
+href="https://wa.me/923014704711">
+Get Started
+</a>
+
+</div>
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+<div class="container">
+
+<p style="color:#39d5ff;font-weight:bold;">
+DIGITAL MARKETING AGENCY
+</p>
+
+<h1>
+Grow Your Business With
+<span>Digital Marketing.</span>
+</h1>
+
+<p>
+We help businesses build a professional online presence through
+websites, Google Ads, Meta Ads, TikTok Ads, YouTube Ads and
+social media marketing.
+</p>
+
+<a class="btn" href="#services">
+Explore Services
+</a>
+
+</div>
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="section" id="services">
+
+<div class="container">
+
+<div class="title">
+<h2>Our Services</h2>
+<p>Click any service to learn more.</p>
+</div>
+
+<div class="grid">
+
+
+<!-- GOOGLE ADS -->
+
+<div class="card" onclick="openService('google')">
+
+<div class="icon">📈</div>
+
+<h3>Google Ads</h3>
+
+<p>
+Reach customers who are searching for your products and services.
+</p>
+
+<span class="learn">
+Learn More →
+</span>
+
+</div>
+
+
+<!-- META ADS -->
+
+<div class="card" onclick="openService('meta')">
+
+<div class="icon">📱</div>
+
+<h3>Meta Ads</h3>
+
+<p>
+Advertise your business on Facebook and Instagram.
+</p>
+
+<span class="learn">
+Learn More →
+</span>
+
+</div>
+
+
+<!-- TIKTOK -->
+
+<div class="card" onclick="openService('tiktok')">
+
+<div class="icon">🎵</div>
+
+<h3>TikTok Ads</h3>
+
+<p>
+Reach audiences with engaging short-form advertising.
+</p>
+
+<span class="learn">
+Learn More →
+</span>
+
+</div>
+
+
+<!-- YOUTUBE -->
+
+<div class="card" onclick="openService('youtube')">
+
+<div class="icon">▶️</div>
+
+<h3>YouTube Ads</h3>
+
+<p>
+Promote your business through powerful video advertising.
+</p>
+
+<span class="learn">
+Learn More →
+</span>
+
+</div>
+
+
+<!-- WEBSITE -->
+
+<div class="card" onclick="openService('website')">
+
+<div class="icon">🌐</div>
+
+<h3>Website Design</h3>
+
+<p>
+Modern, responsive websites for businesses and brands.
+</p>
+
+<span class="learn">
+Learn More →
+</span>
+
+</div>
+
+
+<!-- SOCIAL MEDIA -->
+
+<div class="card" onclick="openService('social')">
+
+<div class="icon">💬</div>
+
+<h3>Social Media</h3>
+
+<p>
+Keep your business active and professional on social media.
+</p>
+
+<span class="learn">
+Learn More →
+</span>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section">
+
+<div class="container about">
+
+<div>
+
+<p style="color:#39d5ff;font-weight:bold;">
+WHY ADGROW?
+</p>
+
+<h2 style="font-size:40px;margin:10px 0;">
+Your Digital Growth Partner
+</h2>
+
+<p>
+AdGrow Solutions helps businesses improve their online presence
+with professional websites, advertising and social media solutions.
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Ready to grow?</h3>
+
+<p style="margin:15px 0 20px;">
+Tell us about your business and we'll discuss the right digital
+solution for you.
+</p>
+
+<a class="btn"
+href="https://wa.me/923014704711">
+Chat on WhatsApp
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="contact">
+
+<h2>Let's Grow Your Business</h2>
+
+<p>
+Contact AdGrow Solutions today.
+</p>
+
+<a class="btn"
+href="https://wa.me/923014704711">
+WhatsApp: +92 301 4704711
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 AdGrow Solutions. All Rights Reserved.
+
+</footer>
+
+
+<!-- SERVICE POPUP -->
+
+<div class="modal" id="modal">
+
+<div class="modal-box">
+
+<button class="close"
+onclick="closeService()">×</button>
+
+<div class="icon" id="serviceIcon"></div>
+
+<h2 id="serviceTitle"></h2>
+
+<p id="serviceText"></p>
+
+<a id="serviceButton"
+class="btn"
+target="_blank">
+Get Started on WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<script>
+
+const services = {
+
+google:{
+icon:"📈",
+title:"Google Ads",
+text:"Google Ads helps businesses appear in front of people who are actively searching for products and services on Google. We can help with campaign planning, ad copy, keyword research and conversion-focused landing pages."
+},
+
+meta:{
+icon:"📱",
+title:"Meta Ads",
+text:"Meta Ads allows businesses to advertise across Facebook and Instagram. We can help with campaign planning, audience targeting, creative ideas and landing-page strategy."
+},
+
+tiktok:{
+icon:"🎵",
+title:"TikTok Ads",
+text:"TikTok Ads can help brands reach audiences through engaging short-form video content. We can help plan campaigns, creative concepts and audience targeting."
+},
+
+youtube:{
+icon:"▶️",
+title:"YouTube Ads",
+text:"YouTube Ads gives businesses the opportunity to promote their services through video. We can help with campaign planning, audience selection and advertising strategy."
+},
+
+website:{
+icon:"🌐",
+title:"Website Design",
+text:"We create professional, mobile-friendly websites for businesses. Your website can include service pages, contact information, WhatsApp buttons and clear calls to action."
+},
+
+social:{
+icon:"💬",
+title:"Social Media Management",
+text:"We help businesses maintain a professional social media presence through content planning, captions, creative ideas and consistent page management."
+}
+
+};
+
+
+function openService(type){
+
+const service = services[type];
+
+document.getElementById("serviceIcon").innerText = service.icon;
+
+document.getElementById("serviceTitle").innerText = service.title;
+
+document.getElementById("serviceText").innerText = service.text;
+
+document.getElementById("serviceButton").href =
+"https://wa.me/923014704711?text=" +
+encodeURIComponent(
+"Hi AdGrow Solutions, I am interested in your " +
+service.title +
+" service."
+);
+
+document.getElementById("modal").classList.add("show");
+
+}
+
+
+function closeService(){
+
+document.getElementById("modal").classList.remove("show");
+
+}
+
+
+document.getElementById("modal").addEventListener("click",function(e){
+
+if(e.target === this){
+
+closeService();
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
